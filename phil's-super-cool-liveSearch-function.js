@@ -1,3 +1,4 @@
+
 // Global variables for live search function ----------------------------
 const searchBar = document.getElementById('searchBar');
 const searchable = document.getElementsByClassName('searchable');
