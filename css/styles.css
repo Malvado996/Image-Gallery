@@ -178,15 +178,19 @@ td,
 th {
   padding: 0; }
 
+#searchBar {
+  margin: .8rem auto;
+  display: block;
+  visibility: hidden; }
+
 .card {
   background-color: red;
   max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1rem auto;
   text-align: center; }
 
 .img {
   max-width: 90%;
-  margin-top: 1em; }
+  margin-top: 1rem; }
 
 /*# sourceMappingURL=styles.css.map */
