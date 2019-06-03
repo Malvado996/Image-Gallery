@@ -23,3 +23,18 @@
   flex-shrink: $shrink;
   @content;
 }
+
+@mixin background-image (
+  $img: null,
+  $pos: center,
+  $size: cover,
+  $repeat: no-repeat,
+  $attach: fixed,
+) {
+  background-image: $img;
+  background-position: $pos;
+  background-size: $size;
+  background-repeat: $repeat;
+  background-attachment: $attach;
+  @content;
+}

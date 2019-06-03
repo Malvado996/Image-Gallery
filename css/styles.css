@@ -178,7 +178,14 @@ td,
 th {
   padding: 0; }
 
-main {
+body {
+  background-image: url("g2.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+#selector1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

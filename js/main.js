@@ -39,3 +39,9 @@ console.log(dataSearch);
   }
 });
 // ----------- Live Search Function end -------------------------------
+
+
+
+    $('#selector1').lightGallery({
+        selector: '.item'
+    });
