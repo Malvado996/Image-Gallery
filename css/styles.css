@@ -178,16 +178,31 @@ td,
 th {
   padding: 0; }
 
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+.card {
+  max-width: 90%;
+  margin: 1rem auto;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .card {
+      max-width: 45%; } }
+  @media (min-width: 1024px) {
+    .card {
+      max-width: 22.5%; } }
+
+.info {
+  background-color: red; }
+
 #searchBar {
   margin: .8rem auto;
   display: block;
   visibility: hidden; }
-
-.card {
-  background-color: red;
-  max-width: 90%;
-  margin: 1rem auto;
-  text-align: center; }
 
 .img {
   max-width: 90%;

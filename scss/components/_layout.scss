@@ -1,0 +1,26 @@
+
+main {
+  @include flexContainer(
+  $dir: row,
+  $wrap: wrap,
+  $just: space-between,
+  $align: flex-end) {}
+}
+
+.card {
+  @include flexItem () {
+    max-width: 90%;
+    margin: 1rem auto;
+    text-align: center;
+      @media (min-width: $br-med){
+        max-width: 45%;
+      }
+      @media (min-width: $br-lg){
+        max-width: 22.5%;
+      }
+  }
+}
+
+.info {
+  background-color: red;
+}
