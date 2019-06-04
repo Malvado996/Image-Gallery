@@ -45,3 +45,5 @@ console.log(dataSearch);
     $('#selector1').lightGallery({
         selector: '.item'
     });
+
+    

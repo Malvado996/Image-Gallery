@@ -1,4 +1,10 @@
 body {
+  background-color: $jet;
+  font-family: 'space mono';
+  font-size: 14px;
+}
+
+main {
   @include background-image($bckrnd-img) {
   }
 }

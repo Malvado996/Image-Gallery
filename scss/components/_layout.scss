@@ -1,19 +1,53 @@
 
+h1 {
+  font-size: $h1--font-size;
+  font-family: 'Pirata One';
+  padding: $h1--padding;
+  text-align: center;
+  margin: $h1--margin;
+  color: $h1;
+  text-shadow: -2px 1px 2px #444444;
+  text-transform: uppercase;
+    @media (min-width: $br-med) {
+      font-size: $h1--font-size__lg;
+    }
+}
+
+.header {
+  @include flexContainer(
+  $dir: row,
+  $wrap: wrap,
+  $align: center,){
+    align-content: space-between;
+    background-color: $header;
+    border: 3px solid $jet;
+    border-radius: 6px;
+  }
+}
+
+#searchBar {
+  visibility: hidden;
+  height: $searchbar--height;
+  margin: $searchbar--margin;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
 #selector1 {
   @include flexContainer(
   $dir: row,
   $wrap: wrap,
   $just: space-between,
-  $align: flex-end) {}
+  $align: flex-start) {}
 }
 
 .card {
   @include flexItem () {
-    max-width: 90%;
+    max-width: $card--max-width;
     margin: 1rem auto;
     text-align: center;
       @media (min-width: $br-med){
-        max-width: 45%;
+        max-width: 30%;
       }
       @media (min-width: $br-lg){
         max-width: 22.5%;
@@ -21,6 +55,30 @@
   }
 }
 
+.img {
+  max-width: 90%;
+  border: 3px solid $img--border;
+  border-radius: 4px;
+  box-shadow: -12px 12px 5px 0px rgba(0,0,0,0.75);
+}
+
 .info {
-  background-color: red;
+  max-width: 87%;
+  margin: $info--margin;
+  border-bottom: 8px double $info--border;
+  border-radius: 4px;
+  background-color: $info;
+  opacity: 0.75;
+  &:hover {
+    background-color: $info--hover;
+  }
+}
+
+h4 {
+  margin: 2px auto;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 4px auto;
 }

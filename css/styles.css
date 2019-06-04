@@ -53,8 +53,7 @@ dfn {
   font-style: italic; }
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
+  font-size: 2em; }
 
 mark {
   background: #ff0;
@@ -179,40 +178,86 @@ th {
   padding: 0; }
 
 body {
-  background-image: url("g2.jpeg");
+  background-color: #363636;
+  font-family: 'space mono';
+  font-size: 14px; }
+
+main {
+  background-image: url("g3.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; }
+
+h1 {
+  font-size: 1.953em;
+  font-family: 'Pirata One';
+  padding: 0.21em;
+  text-align: center;
+  margin: 0 auto;
+  color: #69140e;
+  text-shadow: -2px 1px 2px #444444;
+  text-transform: uppercase; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 2.441em; } }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-between;
+  background-color: #e99415;
+  border: 3px solid #363636;
+  border-radius: 6px; }
+
+#searchBar {
+  visibility: hidden;
+  height: 1.563em;
+  margin: 0.262em auto;
+  border: 2px solid black;
+  border-radius: 3px; }
 
 #selector1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-end; }
+  align-items: flex-start; }
 
 .card {
-  max-width: 90%;
+  max-width: 18.19em;
   margin: 1rem auto;
   text-align: center; }
   @media (min-width: 768px) {
     .card {
-      max-width: 45%; } }
+      max-width: 30%; } }
   @media (min-width: 1024px) {
     .card {
       max-width: 22.5%; } }
 
-.info {
-  background-color: red; }
-
-#searchBar {
-  margin: .8rem auto;
-  display: block;
-  visibility: hidden; }
-
 .img {
   max-width: 90%;
-  margin-top: 1rem; }
+  border: 3px solid #c24938;
+  border-radius: 4px;
+  box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.info {
+  max-width: 87%;
+  margin: 0.512em;
+  border-bottom: 8px double #363636;
+  border-radius: 4px;
+  background-color: #a98a6e;
+  opacity: 0.75; }
+  .info:hover {
+    background-color: #c1c1c1; }
+
+h4 {
+  margin: 2px auto;
+  text-transform: uppercase; }
+
+p {
+  margin: 4px auto; }
 
 /*# sourceMappingURL=styles.css.map */
