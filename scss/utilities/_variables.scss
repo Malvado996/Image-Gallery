@@ -24,24 +24,25 @@ $img--border        : $deep-chestnut;
 
 $bckrnd-img   : url('g3.jpeg');
 
-//  Element sizing -------------------------------------------------------------
-
-$header--margin     : 0.21em 0.21em;
-
-$h1--font-size      : 1.953em;
-$h1--font-size__lg  : 2.441em;
-$h1--margin         : 0 auto;
-$h1--padding        : 0.21em;
-
-$searchbar--height  : 1.563em;
-$searchbar--margin  : 0.262em auto;
-
-$card--max-width    : 18.19em;
-
-$info--margin       : 0.512em auto;
-
 // Breakpoints ------------------------------------------------------------------
 
 $br-sm      : 480px;
 $br-med     : 768px;
 $br-lg      : 1024px;
+
+//  Element sizing -------------------------------------------------------------
+
+$header--margin     : 0.21em 0.21em;
+
+$h1--font-size      : 1.953em;
+$h1--font-size__lg  : 3.052em;
+$h1--margin         : 0 0;
+$h1--padding        : 0.21em;
+$h1--break__1       : $br-med;
+
+$searchbar--height  : 1.563em;
+$searchbar--margin  : 0.512em 0.512em;
+
+$card--max-width    : 18.19em;
+
+$info--margin       : 0.512em auto;

@@ -4,12 +4,14 @@
   $dir: null,
   $wrap: null,
   $just: null,
-  $align: null,) {
+  $alignItem: null,
+  $alignContent: null,) {
     display: $disp;
     flex-direction: $dir;
     flex-wrap: $wrap;
     justify-content: $just;
-    align-items: $align;
+    align-items: $alignItem;
+    align-content: $alignContent;
     @content;
   }
 

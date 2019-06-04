@@ -5,9 +5,10 @@
   @include flexContainer(
   $dir: row,
   $wrap: wrap,
-  $align: center,){
-    align-content: space-between;
-    margin-top: $header--margin;
+  $alignItem: center,
+  $alignContent: space-around,
+  $just: space-around,){
+    margin: $header--margin;
     background-color: $header;
     border: 3px solid $jet;
     border-radius: 6px;
@@ -26,7 +27,7 @@ h1 {
   text-shadow: -2px 1px 2px #444444;
   text-transform: uppercase;
   opacity: 1;
-    @media (min-width: $br-med) {
+    @media (min-width: $h1--break__1) {
       font-size: $h1--font-size__lg;
     }
 
@@ -48,7 +49,7 @@ h1 {
   $dir: row,
   $wrap: wrap,
   $just: space-between,
-  $align: flex-start) {}
+  $alignItem: flex-start) {}
 }
 
 .card {
