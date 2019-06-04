@@ -8,13 +8,18 @@
   $alignItem: center,
   $alignContent: space-around,
   $just: space-around,){
-    margin: $header--margin;
-    background-color: $header;
-    border: 3px solid $jet;
-    border-radius: 6px;
-    opacity: 0.9;
-    z-index: 10;
-  }
+      margin: $header--margin;
+      background-color: $header;
+      border: 3px solid $jet;
+      border-radius: 6px;
+      opacity: 0.9;
+      z-index: 10;
+    }
+      @media (min-width: $header--break) {
+        width: $header--width;
+        margin: $header--margin__break;
+      }
+
 }
 
 h1 {
@@ -96,4 +101,8 @@ h4 {
 
 p {
   margin: 4px auto;
+}
+
+.is-sticky {
+
 }

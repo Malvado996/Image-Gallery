@@ -186,6 +186,10 @@ body {
   font-family: 'space mono';
   font-size: 14px; }
 
+header {
+  max-width: 80%;
+  margin: 0 auto; }
+
 .header {
   display: flex;
   flex-direction: row;
@@ -193,12 +197,16 @@ body {
   justify-content: space-around;
   align-items: center;
   align-content: space-around;
-  margin: 0.21em 0.21em;
+  margin: 0.64em 0.64em;
   background-color: #e99415;
   border: 3px solid #363636;
   border-radius: 6px;
   opacity: 0.9;
   z-index: 10; }
+  @media (min-width: 768px) {
+    .header {
+      width: 767px;
+      margin: 0.64em auto; } }
 
 h1 {
   font-size: 1.953em;

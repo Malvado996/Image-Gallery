@@ -45,5 +45,5 @@ $('#selector1').lightGallery({
 $("#sticker").sticky({
   topSpacing:0,
   zIndex:10,
-  getWidthFrom: '.header'
+  getWidthFrom: 'header'
 });

@@ -32,7 +32,10 @@ $br-lg      : 1024px;
 
 //  Element sizing -------------------------------------------------------------
 
-$header--margin     : 0.21em 0.21em;
+$header--margin     : 0.64em 0.64em;
+$header--margin__break  : 0.64em auto;
+$header--break      : $br-med;
+$header--width      : 767px;
 
 $h1--font-size      : 1.953em;
 $h1--font-size__lg  : 3.052em;
