@@ -1,41 +1,31 @@
-
-// Global variables for live search function ----------------------------
 const searchBar = document.getElementById('searchBar');
-const searchable = document.getElementsByClassName('searchable');
-console.log(searchable);
-
-//-------- Displays searchBar only if Js is intitiated-------------------
 searchBar.style.visibility = 'visible';
 
-// ------- Live Search Function Start-----------------------------------------
 
-// Adds eventListener
-searchBar.addEventListener('input', () => {
+searchBar.addEventListener('keyup', () => {
 
-// Captures user input and converts to lowercase text
-let dataSearch = searchBar.value.toLowerCase();
-console.log(dataSearch);
+  let input = searchBar.value.toLowerCase();
+  console.log(input + ' length= ' + input.length);
+  let card = document.getElementsByClassName('card item');
 
-// Activates for loop only if atleast 3 characters are entered
-  if (dataSearch.length >= 3 ) {
-        console.log('****SEARCH START****');
-    for (i = 0; i < searchable.length; i += 1) {
-        // Converts captured elements text in lowercase
-        let searchText = searchable[i].textContent.toLowerCase();
-        console.log(searchText);
-        // Compares element text to user input
-        if (searchText.includes(dataSearch)) {
-          console.log('++++++++');
-        } else {
-          console.log('--------');
+
+    if (input.length >= 3) {
+      console.log('***START***');
+        for (i = 0; i < card.length; i += 1) {
+            let text = card[i].innerText.toLowerCase();
+            let x = text.includes(input);
+              if (x) {
+                card[i].style.color = 'green';
+              } else {
+                card[i].style.color = 'red';
+              }
         }
+    } else
+
+   if (input.length <= 2) {
+        console.log('START B');
+        for (i = 0; i < card.length; i += 1) {
+          card[i].style.color = 'yellow';
     }
-    console.log('****SEARCH END*****');
-  } else {
-        // Resets elements when user input falls below 3 characters
-        if (dataSearch.length <= 3 ) {
-          console.log('00000');
-        }
   }
 });
-// ----------- Live Search Function end -------------------------------

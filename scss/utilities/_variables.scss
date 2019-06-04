@@ -1,19 +1,11 @@
 
-// Breakpoints -------------------------------------------------------
+//  Colors ---------------------------------------------------------------------
 
-$br-sm      : 480px;
-$br-med     : 768px;
-$br-lg      : 1024px;
-
-$bckrnd-img   : url('g3.jpeg');
-
-
-$turtle-green       :  #898d59;
-$light-taupe        :  #a98a6e;
-$deep-chestnut      :  #c24938; //red
-$cyan-blue          :  #197bbd;
-$gamboge            :  #e99415; //orange
-
+$turtle-green       : #898d59;
+$light-taupe        : #a98a6e;
+$deep-chestnut      : #c24938; //red
+$cyan-blue          : #197bbd;
+$gamboge            : #e99415; //orange
 $up-maroon          : #69140e;
 $charcoal           : #2c4251;
 $silver             : #c1c1c1;
@@ -28,6 +20,14 @@ $info--hover        : $silver;
 $info--border       : $jet;
 $img--border        : $deep-chestnut;
 
+// Images ----------------------------------------------------------------------
+
+$bckrnd-img   : url('g3.jpeg');
+
+//  Element sizing -------------------------------------------------------------
+
+$header--margin     : 0.21em 0.21em;
+
 $h1--font-size      : 1.953em;
 $h1--font-size__lg  : 2.441em;
 $h1--margin         : 0 auto;
@@ -38,4 +38,10 @@ $searchbar--margin  : 0.262em auto;
 
 $card--max-width    : 18.19em;
 
-$info--margin       : 0.512em;
+$info--margin       : 0.512em auto;
+
+// Breakpoints ------------------------------------------------------------------
+
+$br-sm      : 480px;
+$br-med     : 768px;
+$br-lg      : 1024px;

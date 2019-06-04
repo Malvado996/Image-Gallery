@@ -178,16 +178,26 @@ th {
   padding: 0; }
 
 body {
-  background-color: #363636;
-  font-family: 'space mono';
-  font-size: 14px; }
-
-main {
   background-image: url("g3.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  font-family: 'space mono';
+  font-size: 14px; }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-between;
+  margin-top: 0.21em 0.21em;
+  background-color: #e99415;
+  border: 3px solid #363636;
+  border-radius: 6px;
+  opacity: 0.9;
+  z-index: 10; }
 
 h1 {
   font-size: 1.953em;
@@ -197,27 +207,19 @@ h1 {
   margin: 0 auto;
   color: #69140e;
   text-shadow: -2px 1px 2px #444444;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  opacity: 1; }
   @media (min-width: 768px) {
     h1 {
       font-size: 2.441em; } }
-
-.header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: space-between;
-  background-color: #e99415;
-  border: 3px solid #363636;
-  border-radius: 6px; }
 
 #searchBar {
   visibility: hidden;
   height: 1.563em;
   margin: 0.262em auto;
   border: 2px solid black;
-  border-radius: 3px; }
+  border-radius: 3px;
+  opacity: 1; }
 
 #selector1 {
   display: flex;
@@ -245,13 +247,16 @@ h1 {
 
 .info {
   max-width: 87%;
-  margin: 0.512em;
-  border-bottom: 8px double #363636;
+  margin: 0.512em auto;
+  border-bottom: 4px solid #363636;
   border-radius: 4px;
   background-color: #a98a6e;
   opacity: 0.75; }
   .info:hover {
     background-color: #c1c1c1; }
+
+.searchable {
+  text-transform: uppercase; }
 
 h4 {
   margin: 2px auto;
