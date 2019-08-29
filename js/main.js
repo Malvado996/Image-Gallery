@@ -35,9 +35,9 @@ searchBar.addEventListener('keyup', () => {
 
 
 // Lightbox---------------------------------------------------------------------
-$('#selector1').lightGallery({
-    selector: '.item'
-});
+// $('#selector1').lightGallery({
+//     selector: '.item'
+// });
 
 
 // Sticker ----------------------------------------------------------------------
